@@ -1,9 +1,11 @@
 *.aux
 *.log
 *.out
-*.pdf
 *.tex
 *.fdb_latexmk
 *.fls
 *.synctex.gz
 *.svg
+
+cv.pdf
+signature.pdf
