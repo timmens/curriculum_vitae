@@ -3,3 +3,7 @@
 *.out
 *.pdf
 *.tex
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.svg

@@ -1,7 +1,9 @@
 \documentclass{article}
+\usepackage[a4paper, left = 2cm, right = 2cm, top = 2cm, bottom = 0cm]{geometry}
+
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage[a4paper, left = 2cm, right = 2cm, top = 2cm, bottom = 0cm]{geometry}
+
 \usepackage{ctable}
 \usepackage{hyperref}
 \usepackage{tgpagella}
@@ -32,51 +34,49 @@
 \subsection*{Personal Details}
 
 \begin{table}[h!]
-    \renewcommand{\arraystretch}{1.25}
-    \begin{tabular}{p{125pt} p{350pt}}
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{p{110pt} p{350pt}}
          \textit{Address} &  Meckenheimer Allee 140, 53115 Bonn, Germany\\
          \textit{Email} & \href{mailto:tim.mensinger@uni-bonn.de}{\texttt{tim.mensinger(at)uni-bonn.de}}
     \end{tabular}
 \end{table}
 
+
 \subsection*{Education}
 
 \begin{table}[h!]
-\renewcommand{\arraystretch}{1.25}
-    \begin{tabular}{p{125pt} p{350pt}}
-         \textit{Oct. 2015 - Aug. 2018} & \textbf{BSc. Economics} - \textit{University of Bonn} \hfill \\
-         \hfill &  \vspace*{-15pt} \small Thesis: \textit{"Implementation of Machine Learning Tests for Effects on Multiple Outcomes"}  \\
-         \hfill &  \vspace*{-20pt} \small GPA: 1.60 \hfill \\
-         \textit{Oct. 2018 - Exp. Sep. 2020} &  \textbf{MSc. Economics} - \textit{University of Bonn} \hfill \\ \hfill &  \vspace*{-15pt} \small (provisional) GPA: 1.04 \hfill  \\
-         \textit{Oct. 2018 - Exp. Sep. 2021} &  \textbf{BSc. Computer Science} - \textit{University of Bonn} \hfill \\ \hfill &  \vspace*{-15pt} \small (provisional) GPA: 1.38  
+\renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{p{110pt} p{350pt}}
+        \textit{2020 - } & \textbf{PhD in Economics} - \textit{University of Bonn}\\
+        \textit{2018 - } &  \textbf{Studies in Computer Science and Mathematics} - \textit{University of Bonn}\\
+        \textit{2020} &  \textbf{MSc. Economics} - \textit{University of Bonn} \hfill\\
+        \hfill &  \vspace*{-15pt} \small Thesis: \textit{"On the Use of Surrogate Models in Structural Microeconometrics"}\\
+        \textit{2018} & \textbf{BSc. Economics} - \textit{University of Bonn} \hfill\\
+            \hfill &  \vspace*{-15pt} \small Thesis: \textit{"Implementation of Machine Learning Tests for Effects on Multiple Outcomes"}\\
     \end{tabular}
 \end{table}
+
 
 \subsection*{Work}
 
 \begin{table}[h!]
-\renewcommand{\arraystretch}{1.25}
-    \begin{tabular}{p{125pt} p{350pt}}
-%        \textit{May 2016 - July 2017} & Tutor (Math, Economics and CS) - \textit{Student-Sky (Cologne, Germany)} \\
-         \textit{Apr. 2018 - July 2018} &  Student Assistant - \textit{Institute for Finance and Statistics (University of Bonn)} \\
-         \textit{Oct. 2018 - Present} & Research Assistant - \textit{Institute for Finance and Statistics (University of Bonn)} \\
-	 \hfill & \vspace*{-13pt} \small{Selected Projects: \begin{itemize}
-             \item Implementation of methods and simulation studies in R and Matlab for "A Wavelet Method for Panel models with Jump Discontinuities in the Parameters" (Bada et al. (2020+); revise and resubmit at the Journal of Econometrics).
-             \item Implementation of methods and simulation studies in R and STATA for “Selecting relevant outcomes using the sparse-group lasso in a multiple outcome setting” (Janys and Walsh (2020+); work in progress).
-         \end{itemize}} \\
-	     \textit{Feb./Aug. 2019} & Teaching - \textit{R Course (University of Bonn)} \\
+\renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{p{110pt} p{350pt}}
+         \textit{2018 - 2020} &  Research Assistant at the Institute for Finance and Statistics (University of Bonn) \\
+         \textit{2019 and 2020} & Teaching of an introductory \textsf{R} course (University of Bonn) \\
     \end{tabular}
 \end{table}
+
 
 \subsection*{Projects}
 
 \begin{table}[h!]
-\renewcommand{\arraystretch}{1.25}
-    \begin{tabular}{p{125pt} p{350pt}}
-      \textit{May 2019 - Present} & Statistical software - \emph{Causal Forests}\\
-    \hfill & \vspace*{-13pt} \small{\begin{itemize} \item See \url{https://github.com/timmens/causal-forest}.\end{itemize}}\\
-       \textit{Oct 2019 - Present} & Research project - \emph{Uncertainty quantification}\\
-     \hfill & \vspace*{-13pt} \small{\begin{itemize} \item Joint project with Prof. Philipp Eisenhauer (Univ. Bonn) and JProf. Lena Janys (Univ. Bonn) on uncertainty quantification of discete choice dynamic programming models. \end{itemize}}
+\renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{p{110pt} p{350pt}}
+       \textit{2019 - } & Uncertainty quantification of discrete choice dynamic
+       programming models, joint with Prof. Eisenhauer and JProf. Janys (Univ. Bonn) \\
+       \textit{2020 - } & Bandwidth selection with functional data, joint with Prof. 
+       Liebl (Univ. Bonn)
     \end{tabular}
 \end{table}
 
@@ -84,15 +84,16 @@
 \subsection*{Miscellaneous}
 
 \begin{table}[h!]
-\renewcommand{\arraystretch}{1.25}
-    \begin{tabular}{p{125pt} p{350pt}}
-         \textit{Languages} &  German (native speaker), English (fluent) \\ %, Vim (basic) \\
-         \textit{Programming Languages} & \textsf{R}, Python, Matlab, C, Java, SQL, \LaTeX \\
-         \textit{GitHub} & \url{https://github.com/timmens}
+\renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{p{110pt} p{350pt}}
+         \textit{Languages} &  German (native), English (fluent)\\
+         \textit{Programming Languages} & Python, \textsf{R}, Matlab, C, Java, SQL, \LaTeX, HTML\\
+         \textit{GitHub} & \url{https://github.com/timmens}\\
+         \textit{Website} & \url{https://tmensinger.com}
     \end{tabular}
   \end{table}
 
-% 
+
 % \begin{figure}[h!]
 %   \hspace*{-1cm}
 %   \includegraphics[width=6cm]{signature.pdf}
