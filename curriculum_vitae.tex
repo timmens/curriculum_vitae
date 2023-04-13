@@ -1,5 +1,5 @@
 \documentclass[11pt]{article}
-\usepackage[a4paper, left = 1.5cm, right = 1cm, top = 1cm, bottom = 0cm]{geometry}
+\usepackage[a4paper, left = 2cm, right = 2cm, top = 2cm, bottom = 2cm]{geometry}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -11,6 +11,7 @@
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{titlesec}
+\usepackage{fancyhdr}
 
 \setlist{leftmargin=5mm}
 \setlist{rightmargin=5mm}
@@ -23,24 +24,28 @@
     urlcolor=bonnblue
 }
 
-
-\begin{document}
-\thispagestyle{empty}
 \renewcommand\labelitemi{\tiny$\bullet$}
 
+\fancyfoot[C]{\textit{Last updated: \today} \hfill \textit{Page \thepage}}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\pagestyle{fancy}
 \titlespacing*{\section}{0pt}{0pt}{0pt}
 \titlespacing*{\subsection}{0pt}{0pt}{0pt}
-
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\titleformat{\subsection}{\normalfont\bfseries}{\thesection}{1em}{}[{\titlerule[0.4pt]}]
 
 %%% Header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{\hfill \LARGE Tim Mensinger}\vspace*{3pt}
-\subsection*{\hfill Curriculum Vitae}
+\hfill\textbf{\large Curriculum Vitae}
 
-\titleformat{\subsection}{\normalfont\bfseries}{\thesection}{1em}{}[{\titlerule[0.4pt]}]
 
-\vspace{5pt}
+%%% Personal Details %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{25pt}
 \subsection*{Personal Details}
 
 \begin{table}[h!]
@@ -56,25 +61,55 @@
 
 %%% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{-5pt}
 \subsection*{Education}
 
 \begin{table}[h!]
 \renewcommand{\arraystretch}{1.4}
     \begin{tabular}{p{70pt} p{420pt}}
-        \textit{2020 - } & \textbf{PhD in Economics} - \textit{Bonn Graduate School of Economics}\\
+        \textit{2020 - } & \textbf{Ph.D. in Economics} - \textit{Bonn Graduate School of Economics}\\
         \textit{2018 - 2020} &  \textbf{Studies in Computer Science} - \textit{University of Bonn}\\
-        \textit{2020} &  \textbf{MSc. Economics} (GPA: 1.1) - \textit{University of Bonn} \hfill\\[-0.5em]
+        \textit{2020} &  \textbf{M.Sc. Economics} (GPA: 1.1) - \textit{University of Bonn} \hfill\\[-0.5em]
         \hfill &  \vspace*{-15pt} \bulletpoint \small Thesis: "On the Use of Surrogate Models in Structural Microeconometrics"\\
-        \textit{2018} & \textbf{BSc. Economics} (GPA: 1.6) - \textit{University of Bonn}
+        \textit{2018} & \textbf{B.Sc. Economics} (GPA: 1.6) - \textit{University of Bonn}
         \hfill\\[-0.5em] \hfill &  \vspace*{-15pt} \bulletpoint {\small Thesis:
         "Implementation of Machine Learning Tests for Effects on Multiple Outcomes"}
     \end{tabular}
 \end{table}
 
+%%% Working Papers & Projects %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{-5pt}
-\subsection*{Work}
+\subsection*{Projects \& Working Papers}
+
+\begin{table}[h!]
+\renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{p{70pt} p{420pt}}
+        \textit{2023 -} & \href{https://github.com/OpenSourceEconomics/lcm}{Gender Role Attitudes and Couples' Labor Supply}\\[-0.5em]
+        \hfill &  \vspace*{-15pt} \small --- with Christian Zimpelmann\\
+        \textit{2022 -} & \href{https://github.com/timmens/functional-treatment-effects}{Causal Inference with Functional Data}\\[-0.5em]
+        \hfill &  \vspace*{-15pt} \small --- with Dominik Liebl\\
+        \textit{2022 -} & \href{https://github.com/OpenSourceEconomics/tranquilo}{Tranquilo: A least-squares trust-region optimizer for noisy problems}\\[-0.5em]
+        \hfill &  \vspace*{-15pt} \small --- with Janos Gabler, Sebastian Gsell \& Mariam Petrosyan
+    \end{tabular}
+\end{table}
+
+%%% Publications %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Publications}
+
+\begin{table}[h!]
+\renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{p{70pt} p{420pt}}
+        \textit{2021} &
+        \href{https://www.sciencedirect.com/science/article/abs/pii/S0304407621002189}{A
+        wavelet method for panel models with jump discontinuities in the parameters}\\[-0.5em]
+        \hfill &  \vspace*{-15pt} \small \textit{Journal of Econometrics}, with Bada, O., Kneip, A.,
+        Liebl, D., Gualtieri, J., and Sickles R. C.
+    \end{tabular}
+\end{table}
+
+%%% Employment %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Employment}
 
 \begin{table}[h!]
 \renewcommand{\arraystretch}{1.4}
@@ -86,68 +121,95 @@
         Microeconomics (Uni Bonn)\\
         \textit{2018 - 2020} & \textbf{Research Assistant} at the Institute for Finance and
         Statistics (Uni Bonn) \\
-        \textit{2019 \& 2020} & \textbf{Teaching} of an introductory \textsf{R} course (Uni Bonn)\\
+        \textit{2019} \& \textit{2020} & \textbf{Teaching} of an introductory \textsf{R} course (Uni Bonn)\\
     \end{tabular}
 \end{table}
 
-\vspace{-5pt}
-\subsection*{Publications}
 
+\newpage
+\pagestyle{fancy}
+\titlespacing*{\section}{0pt}{0pt}{0pt}
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\titleformat{\subsection}{\normalfont\bfseries}{\thesection}{1em}{}[{\titlerule[0.4pt]}]
+
+%%% Header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{\hfill \LARGE Tim Mensinger}\vspace*{3pt}
+\hfill\textbf{\large Curriculum Vitae}
+\vspace{25pt}
+
+%%% Events and Workshops %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Presentations \& Workhops}
+
+\vspace{10pt}
+\textit{Presented}
+\vspace{-5pt}
 \begin{table}[h!]
 \renewcommand{\arraystretch}{1.4}
     \begin{tabular}{p{70pt} p{420pt}}
-        \textit{2021} &
-        \href{https://www.sciencedirect.com/science/article/abs/pii/S0304407621002189}{A
-        wavelet method for panel models with jump discontinuities in the parameters},
-        \textit{Journal of Econometrics}, with Bada, O., Kneip, A., Liebl, D.,
-        Gualtieri, J., and Sickles R. C.
+        \textit{2023} & \href{https://sites.google.com/view/high-dimensional-data/home}{Workshop on
+        High-Dimensionsal Data Analaysis} - Madrid, Spain\\
+
+        \textit{2022} &
+        \href{http://www.cmstatistics.org/RegistrationsV2/COMPSTAT2022/fullprogramme.php}{Statistische
+        Woche} - Münster, Germany\\
+
+        \textit{2022} &
+        \href{http://www.cmstatistics.org/RegistrationsV2/COMPSTAT2022/fullprogramme.php}{Computational
+        Statistics Conference} - Bologna, Italy\\
+
+        \textit{2022} & \href{https://www.scipy2022.scipy.org/}{SciPy conference} - Austin,
+        Texas\\[-0.5em]\hfill & \bulletpoint {\small Joint with Janos Gabler, recording available
+        \href{https://www.youtube.com/watch?v=ftlw0rARrtI}{here}}\\
+
+        \textit{2022} & Workshop on numerical optimization with estimagic\\[-0.5em]\hfill&
+        \bulletpoint {\small Invited workshop at the Hoover Institute at Stanford University by
+        Prof. Kenneth Judd}\\[-0.5em]\hfill& \bulletpoint {\small Joint with Janos Gabler}\\
+
+    \end{tabular}
+\end{table}
+
+\vspace{-15pt}
+\noindent \textit{Participated}
+\vspace{-5pt}
+\begin{table}[h!]
+\renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{p{70pt} p{420pt}}
+        \textit{2021} & \href{https://sites.google.com/view/uzhjuddwkshop/}{Computational Economics
+        Workshop} - Zurich
     \end{tabular}
 \end{table}
 
 
-\vspace{-5pt}
+
+%%% Misc %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection*{Miscellaneous}
 
 \begin{table}[h!]
 \renewcommand{\arraystretch}{1.4}
     \begin{tabular}{p{70pt} p{420pt}}
          \textit{Languages} &  German (native), English (fluent)\\
-         \textit{Programming} & Python, \textsf{R}, Matlab, C, Java, SQL, \LaTeX, HTML\\
          \textit{Software} &
          \href{https://estimagic.readthedocs.io/en/stable/}{\texttt{estimagic}} -
-         Contributor\\[-0.5em] \hfill& \bulletpoint {\small Python package designed to facilitate working
-         with large computational models}\\\hfill&
+         Core contributor\\[-0.5em] \hfill& \bulletpoint {\small Python package designed to
+         facilitate the optimization and estimation of large models}\\\hfill&
+         \href{https://estimagic.readthedocs.io/en/stable/}{\texttt{tranquilo}} -
+         Author\\[-0.5em] \hfill& \bulletpoint {\small Python package for the optimization of
+         noisy least-square problems}\\\hfill&
          \href{https://github.com/timmens/causal-forest}{\texttt{cforest}} -
          Author\\[-0.5em] \hfill& \bulletpoint {\small Python package designed to estimate heterogeneous
          treatment effects}\\\hfill&
          \href{https://github.com/OpenSourceEconomics/econ-project-templates}{\texttt{econ-project-templates}} -
          Contributor\\[-0.5em] \hfill& \bulletpoint {\small Python package designed to
          provide reproducible project templates}\\
-    \end{tabular}
-\end{table}
-
-
-\vspace{-5pt}
-\subsection*{Events and Workhops}
-
-\begin{table}[h!]
-\renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{p{70pt} p{420pt}}
-        \textit{2021 - } & Organizer of the
-        \href{https://github.com/OpenSourceEconomics/ose-meetup}{OpenSourceEconomics
-        Meetup}\\ \textit{2021} & Participated at the
-        \href{https://sites.google.com/view/uzhjuddwkshop/}{Computational Economics
-        Workshop}, Zurich\\[-0.5em]\hfill & \bulletpoint {\small Financed by the BGSE}\\
-        \textit{2022} & Organizer and moderator of the lecture series
-        \href{https://open-econ.org/events/#ose-meets-industry}{OSE meets Industry}\\
-        \textit{2022} & Presented a tutorial on numerical optimization at the
-        SciPy conference, Austin, Texas\\[-0.5em]\hfill & \bulletpoint {\small Joint
-        with Janos Gabler, recording available
-    \href{https://www.youtube.com/watch?v=ftlw0rARrtI}{here}}\\
-        \textit{2022} & Held a workshop on numerical optimization with estimagic\\[-0.5em]
-        \hfill & \bulletpoint
-        {\small Invited workshop at the Hoover Institute at Stanford University by Prof. Kenneth Judd}
-
+        \textit{Organizer} & \href{https://github.com/OpenSourceEconomics/ose-meetup}{OpenSourceEconomics
+        Meetup}\\[-0.5em]\hfill&\bulletpoint {\small A recurring meetup to present
+        computational work and discuss open-source tools}\\\hfill&
+        \href{https://open-econ.org/events/#ose-meets-industry}{OSE meets
+        Industry}\\[-0.5em]\hfill&\bulletpoint {\small An event to discuss open problems in industry with researchers and students}
     \end{tabular}
 \end{table}
 
@@ -162,8 +224,5 @@
 %  \hrulefill\\
 % Bonn, \today
 % \end{tabular} 
-
-\vspace{-20pt}
-\hfill \small{Updated on \today}
 
 \end{document}
